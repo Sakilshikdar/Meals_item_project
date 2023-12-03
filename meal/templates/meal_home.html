@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% load static %} {% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/meal_style.css' %}" />
+{% endblock %} {% block content %}
+<h1 class="div_text">Welcome to the Meal Planner!</h1>
+
+<div class="d-flex flex-wrap justify-content-center">
+  {% for meal in data.categories %}
+  <div class="col-4">
+    <div class="card m-2">
+      <img src="{{meal.strCategoryThumb}}" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{meal.strCategory}}</h5>
+        <p class="card-text">
+          {{meal.strCategoryDescription | truncatewords:10 }}
+        </p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
