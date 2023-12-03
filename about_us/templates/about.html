@@ -1,3 +1,24 @@
-{% extends 'base.html' %} {% block content %}
-<h1>this is about us</h1>
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="card my-5 container">
+  <div class="row">
+    <div class="col-md-6">
+      <img
+        src="{% static 'about_images/about-photo.jpg' %}"
+        class="rounded-start w-75"
+        alt="..."
+      />
+    </div>
+    <div class="col-md-6 my-auto">
+      <div>
+        <div>
+          <h5 class="card-title fw-bolder">About Us</h5>
+          <p class="card-text w-75">
+            This is a simple hero unit, a simple jumbotron-style component for
+            calling extra attention to featured content or information.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

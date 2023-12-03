@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div
+  class="text-bg-dark"
+  style="
+    background-image: url('{% static 'images/header5.jpg' %}');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    filter: blur(0px);
+  "
+>
+  <div class="d-flex align-items-center justify-content-center h-100">
+    <div class="text-center my-auto mt-5">
+      <h5 class="fw-bolder">RISTORANTE</h5>
+      <p class="text_card fw-bolder">
+        Amazing Table with River View & Delicious Food
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,12 +1,12 @@
-.blurred-image {
-  filter: blur(5px);
-  width: 100%;
+/* styles.css */
+.text-bg-dark {
+  background-size: cover;
+  background-position: center;
   height: 100vh;
-  display: block;
-  position: relative;
+  filter: brightness(50%);
 }
 
-.image-wrapper {
-  position: relative;
-  overflow: hidden;
+.text-bg-dark .text-center {
+  filter: brightness(0%);
+  height: 100vh;
 }
